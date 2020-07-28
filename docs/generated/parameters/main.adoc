@@ -1,0 +1,26 @@
+
+.VPC Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Internet VPC CIDR
+(`InternetVPCCidr`)|`10.0.0.0/16`|CIDR for Internet VPC supernet|Shared VPC CIDR
+(`SharedVPCCidr`)|`10.10.0.0/16`|CIDR for Shared VPC supernet|Production VPC CIDR
+(`ProductionVPCCidr`)|`172.16.0.0/16`|CIDR for Production VPC supernet|Endpoint VPC CIDR
+(`EndpointVPCCidr`)|`192.168.0.0/16`|CIDR for Endpoint VPC supernet
+|===
+.Deployment Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Project Name
+(`ProjectName`)|`official-quickstart`|Name to tag resources with|Database password
+(`DBPassword`)|`**__Requires Input__**`|Password to set for database server|CIS Alerting Email
+(`CisAlertingEmail`)|`**__Requires Input__**`|Email Address to send Alert notifications for CIS breaches
+|===
+.AWS Quick Start Configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Quick Start S3 bucket name
+(`QSS3BucketName`)|`aws-quickstart`|NO_DESCRIPTION|Quick Start S3 key prefix
+(`QSS3KeyPrefix`)|`quickstart-compliance-uk-official/`|S3 key prefix for the Quick Start assets. Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/).|Quick Start S3 bucket region
+(`QSS3BucketRegion`)|`eu-west-2`|The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.
+|===
